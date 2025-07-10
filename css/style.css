@@ -43,11 +43,20 @@ li {
   background-color: black;
   box-sizing: border-box;
 }
+
 .header-container {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.mini-device-logo path {
+  fill: white;
+}
+
+.mini-device-logo {
+  display: none;
 }
 
 .header-logo path {
@@ -80,6 +89,12 @@ li {
 
 .list-link:hover {
   color: red;
+}
+
+.shop-and-menu {
+  display: flex;
+  gap: 100px;
+  align-items: center;
 }
 
 .header-shop path {
@@ -288,4 +303,245 @@ li {
 
 .footer-img:hover path {
   fill: red;
+}
+
+/* Responsive 1130 */
+@media (max-width: 1131px) {
+  .content-full {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .content-left {
+    width: 450px;
+    height: 500px;
+  }
+  .content-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .last-section-content-full {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .last-section-left {
+    flex-wrap: wrap;
+  }
+  /* Footer */
+  .footer {
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .footer-content-full {
+    gap: 50px;
+  }
+
+  .footer-left-information {
+    gap: 20px;
+  }
+}
+
+/* Responsive 950 */
+@media (max-width: 951px) {
+  .footer-content-full {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-right {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 50px;
+  }
+}
+
+/* Responsive 980 */
+@media (max-width: 980px) {
+  .header {
+    padding: 25px 100px;
+  }
+  .nav {
+    display: none;
+  }
+
+  .mini-device-logo path {
+    fill: white;
+  }
+
+  .mini-device-logo {
+    display: block;
+  }
+}
+
+/* Responsive 800 */
+@media (max-width: 800px) {
+  .last-section-left {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .last-title {
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 1px;
+  }
+
+  .last-text {
+    font-size: 13px;
+    font-weight: 500;
+    flex-wrap: wrap;
+  }
+}
+
+/* Responsive 600 */
+
+@media (max-width: 600px) {
+  .header {
+    padding: 20px 50px;
+  }
+
+  .content-right-title {
+    font-size: 30px;
+  }
+  .content-text {
+    font-size: 13px;
+  }
+}
+/* Responsive 500 */
+@media (max-width: 500px) {
+  .footer-text {
+    font-size: 14px;
+    line-height: 1.3;
+    font-weight: 400;
+  }
+  .list-ul {
+    gap: 15px;
+  }
+  .list-link {
+    font-size: 11px;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 540px) {
+  .last-section-content-full {
+    padding-bottom: 60px;
+    gap: 75px;
+  }
+
+  .last-section-img {
+    width: 400px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 470px) {
+  .content-left {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 431px) {
+  .shop-and-menu {
+    gap: 50px;
+  }
+
+  .last-section-img {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-title {
+    font-size: 30px;
+  }
+  .second-section-img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .content-left {
+    width: 300px;
+    height: 300px;
+  }
+
+  .section2-product {
+    font-size: 12px;
+  }
+
+  .content-right-title {
+    font-size: 25px;
+  }
+  .content-text {
+    font-weight: 500;
+    font-size: 12px;
+  }
+  /* Footer */
+  .footer{
+    padding-left: 25px;
+    padding-right: 25px;
+    
+  }
+  .footer-content-full {
+    align-items: center;
+  }
+  .footer-text {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .list-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 360px) {
+  .header-shop {
+    display: none;
+  }
+  .shop-and-menu {
+    gap: 20px;
+  }
+
+  .last-section-left {
+    gap: 16px;
+  }
+
+  .last-title {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .last-text {
+    font-size: 11px;
+    line-height: 15px;
+  }
+
+  .last-section-img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 330px) {
+  .hero-title {
+    font-size: 25px;
+  }
+  .content-full {
+    gap: 50px;
+    width: 100%;
+  }
 }
