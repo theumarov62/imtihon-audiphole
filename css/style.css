@@ -210,6 +210,10 @@ li {
   opacity: 75%;
 }
 
+/* three section */
+
+
+
 /* Last Section */
 
 .last-section-content-full {
@@ -541,7 +545,7 @@ li {
     font-size: 25px;
   }
   .content-full {
-    gap: 50px;
+    gap: 25px;
     width: 100%;
   }
 }
